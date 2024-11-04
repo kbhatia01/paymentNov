@@ -1,4 +1,4 @@
-from payment.gateways.payment_gateways import RazorPaymentGateway
+from payment.gateways.payment_gateways import RazorPaymentGateway, StripePaymentGateway
 
 
 class PaymentService:

@@ -40,3 +40,10 @@ class RazorPaymentGateway(PaymentGateway):
         payment_link = self.client.payment_link.create(payment_data)
         return json.dumps(payment_link)
 
+
+class StripePaymentGateway(PaymentGateway):
+    def __init__(self):
+        pass
+
+    def generate_payment_link(self, order_id, amount):
+        pass
